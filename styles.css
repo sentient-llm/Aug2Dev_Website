@@ -197,8 +197,6 @@ img {
   border-radius: 50%;
   object-fit: cover;
 }
-  font-weight: 800;
-}
 
 .logo-text {
   color: var(--color-text);
