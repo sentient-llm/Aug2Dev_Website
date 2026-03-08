@@ -558,6 +558,15 @@ img {
   gap: 8px;
 }
 
+.work-card-sithere {
+  background: linear-gradient(135deg, #162d48 0%, #1a3a2e 100%);
+  border-color: #2a5a4a;
+}
+
+.work-card-sithere:hover {
+  border-color: #3a7a5a;
+}
+
 /* ===== Footer (with contact form) ===== */
 .footer {
   background: var(--color-bg-alt);

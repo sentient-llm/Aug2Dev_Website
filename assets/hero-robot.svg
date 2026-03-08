@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#162d48"/>
+      <stop offset="100%" style="stop-color:#0c1a2a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#348ddb"/>
+      <stop offset="100%" style="stop-color:#0049a2"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e1a730"/>
+      <stop offset="100%" style="stop-color:#f0bb45"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="520" height="520" rx="20" fill="url(#bg)"/>
+  <!-- Grid lines -->
+  <g opacity="0.06" stroke="#348ddb" stroke-width="1">
+    <line x1="0" y1="130" x2="520" y2="130"/>
+    <line x1="0" y1="260" x2="520" y2="260"/>
+    <line x1="0" y1="390" x2="520" y2="390"/>
+    <line x1="130" y1="0" x2="130" y2="520"/>
+    <line x1="260" y1="0" x2="260" y2="520"/>
+    <line x1="390" y1="0" x2="390" y2="520"/>
+  </g>
+  <!-- Robot body -->
+  <rect x="170" y="180" width="180" height="200" rx="24" fill="#1e3653" stroke="#2a4a6a" stroke-width="2"/>
+  <!-- Robot head -->
+  <rect x="185" y="120" width="150" height="80" rx="16" fill="#1e3653" stroke="#2a4a6a" stroke-width="2"/>
+  <!-- Antenna -->
+  <line x1="260" y1="120" x2="260" y2="90" stroke="#348ddb" stroke-width="3"/>
+  <circle cx="260" cy="82" r="8" fill="#e1a730"/>
+  <!-- Eyes -->
+  <circle cx="230" cy="155" r="12" fill="#348ddb" opacity="0.9"/>
+  <circle cx="290" cy="155" r="12" fill="#348ddb" opacity="0.9"/>
+  <circle cx="230" cy="153" r="5" fill="white" opacity="0.8"/>
+  <circle cx="290" cy="153" r="5" fill="white" opacity="0.8"/>
+  <!-- Mouth -->
+  <rect x="235" y="172" width="50" height="4" rx="2" fill="#348ddb" opacity="0.5"/>
+  <!-- Chest screen -->
+  <rect x="205" y="220" width="110" height="60" rx="8" fill="#0c1a2a" stroke="#348ddb" stroke-width="1.5"/>
+  <!-- Code lines on screen -->
+  <rect x="215" y="233" width="50" height="3" rx="1.5" fill="#348ddb" opacity="0.7"/>
+  <rect x="215" y="242" width="70" height="3" rx="1.5" fill="#e1a730" opacity="0.6"/>
+  <rect x="215" y="251" width="40" height="3" rx="1.5" fill="#348ddb" opacity="0.5"/>
+  <rect x="215" y="260" width="60" height="3" rx="1.5" fill="#4da0e8" opacity="0.4"/>
+  <!-- Arms -->
+  <rect x="130" y="210" width="40" height="16" rx="8" fill="#1e3653" stroke="#2a4a6a" stroke-width="1.5"/>
+  <rect x="350" y="210" width="40" height="16" rx="8" fill="#1e3653" stroke="#2a4a6a" stroke-width="1.5"/>
+  <!-- Legs -->
+  <rect x="210" y="380" width="24" height="40" rx="8" fill="#1e3653" stroke="#2a4a6a" stroke-width="1.5"/>
+  <rect x="286" y="380" width="24" height="40" rx="8" fill="#1e3653" stroke="#2a4a6a" stroke-width="1.5"/>
+  <!-- Floating elements -->
+  <circle cx="100" cy="140" r="4" fill="#348ddb" opacity="0.3"/>
+  <circle cx="420" cy="100" r="6" fill="#e1a730" opacity="0.25"/>
+  <circle cx="80" cy="350" r="5" fill="#4da0e8" opacity="0.2"/>
+  <circle cx="440" cy="300" r="4" fill="#e1a730" opacity="0.3"/>
+  <!-- Brackets -->
+  <text x="90" y="260" font-size="36" font-family="monospace" fill="#348ddb" opacity="0.15">&lt;/&gt;</text>
+  <text x="380" y="400" font-size="28" font-family="monospace" fill="#e1a730" opacity="0.12">{ }</text>
+</svg>
