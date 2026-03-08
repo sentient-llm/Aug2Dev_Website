@@ -170,7 +170,7 @@ img {
 }
 
 .navbar.scrolled {
-  background: rgba(10, 10, 15, 0.92);
+  background: rgba(12, 26, 42, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--color-border);
@@ -191,12 +191,12 @@ img {
   font-weight: 800;
 }
 
-.logo-icon {
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-size: 1.5rem;
+.logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
   font-weight: 800;
 }
 
@@ -311,47 +311,14 @@ img {
   flex-wrap: wrap;
 }
 
-/* Code Window */
-.code-window {
-  background: var(--color-bg-card);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  overflow: hidden;
+/* Hero Image */
+.hero-image {
+  width: 100%;
+  max-width: 520px;
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg), var(--shadow-glow);
+  border: 1px solid var(--color-border);
 }
-
-.code-header {
-  display: flex;
-  gap: 8px;
-  padding: 14px 18px;
-  background: var(--color-surface);
-  border-bottom: 1px solid var(--color-border);
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-
-.dot.red { background: #ff5f56; }
-.dot.yellow { background: #ffbd2e; }
-.dot.green { background: #27c93f; }
-
-.code-body {
-  padding: 24px;
-  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
-  font-size: 0.88rem;
-  line-height: 1.8;
-  overflow-x: auto;
-}
-
-.code-keyword { color: #4da0e8; }
-.code-var { color: #e8e0e0; }
-.code-func { color: #348ddb; }
-.code-str { color: #e1a730; }
-.code-prop { color: #f0bb45; }
-.code-comment { color: #7a8ea0; }
 
 /* ===== Services Section ===== */
 .services {
@@ -573,75 +540,24 @@ img {
   font-weight: 500;
 }
 
-/* ===== Testimonials ===== */
-.testimonials {
-  padding: 120px 0;
-  background: var(--color-bg-alt);
+.work-card-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-sm);
+  object-fit: contain;
+  margin-bottom: 16px;
 }
 
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 48px;
-}
-
-.testimonial-card {
-  background: var(--color-bg-card);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  padding: 32px 28px;
-  transition: all var(--transition);
-}
-
-.testimonial-card:hover {
-  border-color: var(--color-border-light);
-  transform: translateY(-2px);
-}
-
-.testimonial-stars {
+.work-cta {
   display: flex;
-  gap: 4px;
-  color: var(--color-accent);
-  margin-bottom: 18px;
-}
-
-.testimonial-text {
-  font-size: 0.98rem;
-  color: var(--color-text-muted);
-  line-height: 1.8;
-  margin-bottom: 24px;
-  font-style: italic;
-}
-
-.testimonial-author {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.testimonial-avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--gradient-primary);
-  display: flex;
-  align-items: center;
+  gap: 16px;
   justify-content: center;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #fff;
-  flex-shrink: 0;
+  margin-top: 40px;
+  flex-wrap: wrap;
 }
 
-.testimonial-author strong {
-  display: block;
-  font-size: 0.9rem;
-}
-
-.testimonial-author span {
-  font-size: 0.82rem;
-  color: var(--color-text-subtle);
+.work-cta .btn {
+  gap: 8px;
 }
 
 /* ===== Footer (with contact form) ===== */
@@ -710,6 +626,15 @@ img {
 .contact-item svg {
   color: var(--color-primary-light);
   flex-shrink: 0;
+}
+
+.contact-item a {
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+}
+
+.contact-item a:hover {
+  color: var(--color-primary-light);
 }
 
 .footer-form h4 {
@@ -821,10 +746,6 @@ img {
     grid-row: span 1;
   }
 
-  .testimonials-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .footer-top {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -875,10 +796,6 @@ img {
 
   .work-card-large {
     grid-column: span 1;
-  }
-
-  .testimonials-grid {
-    grid-template-columns: 1fr;
   }
 
   .about-stats {

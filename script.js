@@ -52,7 +52,7 @@ const observer = new IntersectionObserver((entries) => {
 // Add fade-in class to elements and observe them
 document.addEventListener('DOMContentLoaded', () => {
   const animateElements = document.querySelectorAll(
-    '.service-card, .about-tile, .work-card, .testimonial-card, .section-tag, .section-title, .section-subtitle, .hero-content, .hero-visual, .about-content, .about-visual, .footer-brand, .footer-form'
+    '.service-card, .about-tile, .work-card, .section-tag, .section-title, .section-subtitle, .hero-content, .hero-visual, .about-content, .about-visual, .footer-brand, .footer-form'
   );
 
   animateElements.forEach((el, index) => {
