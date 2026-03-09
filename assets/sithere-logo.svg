@@ -1,5 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <rect width="64" height="64" rx="12" fill="#2d8c5a"/>
-  <text x="32" y="28" font-size="20" font-family="sans-serif" fill="white" text-anchor="middle">🐾</text>
-  <text x="32" y="50" font-size="11" font-family="Inter, sans-serif" font-weight="700" fill="white" text-anchor="middle">SitHere</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <clipPath id="dog-clip">
+      <circle cx="100" cy="90" r="70"/>
+    </clipPath>
+    <linearGradient id="banner-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8850c"/>
+      <stop offset="50%" stop-color="#e1a730"/>
+      <stop offset="100%" stop-color="#e8850c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer ring -->
+  <circle cx="100" cy="90" r="78" fill="none" stroke="#38b6d4" stroke-width="6"/>
+  <circle cx="100" cy="90" r="74" fill="none" stroke="#2a9ab8" stroke-width="2"/>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="90" r="70" fill="#e8dcc8"/>
+
+  <g clip-path="url(#dog-clip)">
+    <!-- Dog body/chest (Rottweiler-style) -->
+    <ellipse cx="100" cy="130" rx="55" ry="40" fill="#2a1a0a"/>
+
+    <!-- Dog head -->
+    <ellipse cx="100" cy="85" rx="42" ry="38" fill="#3a2210"/>
+
+    <!-- Face marking - tan/brown areas (Rottweiler markings) -->
+    <ellipse cx="100" cy="95" rx="30" ry="22" fill="#6b4420"/>
+    <!-- Muzzle -->
+    <ellipse cx="100" cy="105" rx="18" ry="12" fill="#8a5a30"/>
+    <!-- Cheek dots -->
+    <circle cx="80" cy="90" r="8" fill="#c8843a" opacity="0.7"/>
+    <circle cx="120" cy="90" r="8" fill="#c8843a" opacity="0.7"/>
+
+    <!-- Eyebrow marks (tan) -->
+    <circle cx="82" cy="72" r="6" fill="#c8843a"/>
+    <circle cx="118" cy="72" r="6" fill="#c8843a"/>
+
+    <!-- Eyes -->
+    <ellipse cx="84" cy="80" rx="7" ry="7" fill="#1a0a00"/>
+    <ellipse cx="116" cy="80" rx="7" ry="7" fill="#1a0a00"/>
+    <!-- Eye highlights -->
+    <circle cx="82" cy="78" r="2.5" fill="#fff" opacity="0.7"/>
+    <circle cx="114" cy="78" r="2.5" fill="#fff" opacity="0.7"/>
+    <circle cx="86" cy="82" r="1.5" fill="#fff" opacity="0.4"/>
+    <circle cx="118" cy="82" r="1.5" fill="#fff" opacity="0.4"/>
+
+    <!-- Nose -->
+    <ellipse cx="100" cy="98" rx="8" ry="5" fill="#1a0a00"/>
+    <ellipse cx="97" cy="97" rx="2" ry="1.5" fill="#3a2a1a" opacity="0.5"/>
+
+    <!-- Mouth line -->
+    <path d="M100 103 Q94 110 88 108" fill="none" stroke="#1a0a00" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M100 103 Q106 110 112 108" fill="none" stroke="#1a0a00" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Tongue (slight) -->
+    <ellipse cx="100" cy="112" rx="5" ry="4" fill="#d4605a"/>
+
+    <!-- Ears -->
+    <ellipse cx="65" cy="60" rx="16" ry="22" fill="#2a1a0a" transform="rotate(-15,65,60)"/>
+    <ellipse cx="135" cy="60" rx="16" ry="22" fill="#2a1a0a" transform="rotate(15,135,60)"/>
+    <!-- Inner ear -->
+    <ellipse cx="67" cy="62" rx="8" ry="12" fill="#4a2a10" transform="rotate(-15,67,62)"/>
+    <ellipse cx="133" cy="62" rx="8" ry="12" fill="#4a2a10" transform="rotate(15,133,62)"/>
+
+    <!-- Forehead detail line -->
+    <path d="M88 65 L100 60 L112 65" fill="none" stroke="#4a2a10" stroke-width="1" opacity="0.4"/>
+
+    <!-- Chest V marking -->
+    <path d="M80 125 L100 140 L120 125" fill="#6b4420" stroke="none"/>
+  </g>
+
+  <!-- Banner ribbon -->
+  <path d="M25 150 Q30 140 45 142 L100 132 L155 142 Q170 140 175 150 L170 158 Q165 152 155 154 L100 145 L45 154 Q35 152 30 158 Z" fill="url(#banner-grad)" stroke="#b87010" stroke-width="1"/>
+  <!-- Banner fold shadows -->
+  <path d="M45 142 L45 154" stroke="#b87010" stroke-width="0.5" opacity="0.5"/>
+  <path d="M155 142 L155 154" stroke="#b87010" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Banner text -->
+  <text x="100" y="148" font-size="16" font-family="Inter, Arial, sans-serif" font-weight="800" fill="#fff" text-anchor="middle" letter-spacing="3">SIT-HERE</text>
+
+  <!-- Bottom circle decoration -->
+  <circle cx="100" cy="90" r="78" fill="none" stroke="#38b6d4" stroke-width="1" opacity="0.3"/>
 </svg>

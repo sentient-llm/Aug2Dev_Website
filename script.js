@@ -94,20 +94,34 @@ function animateCounter(element, target) {
   }, stepTime);
 }
 
-// ===== Contact form handling =====
+// ===== Contact form handling (sends direct email via mailto) =====
 const contactForm = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
 
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const formData = new FormData(contactForm);
-  const data = Object.fromEntries(formData);
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
 
-  // For now, show a success message (replace with actual API call)
-  formStatus.textContent = 'Thank you! Your message has been sent. We\'ll get back to you soon.';
+  if (!name || !email || !message) {
+    formStatus.textContent = 'Please fill out all fields.';
+    formStatus.style.color = '#e85050';
+    return;
+  }
+
+  const subject = encodeURIComponent('New Inquiry from ' + name);
+  const body = encodeURIComponent(
+    'Name: ' + name + '\n' +
+    'Email: ' + email + '\n\n' +
+    'Message:\n' + message
+  );
+
+  window.location.href = 'mailto:founder@augmented2.dev?subject=' + subject + '&body=' + body;
+
+  formStatus.textContent = 'Opening your email client...';
   formStatus.style.color = 'var(--color-accent)';
-  contactForm.reset();
 
   setTimeout(() => {
     formStatus.textContent = '';

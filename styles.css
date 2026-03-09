@@ -1,26 +1,26 @@
 /* ===== CSS Variables / Design Tokens ===== */
 :root {
-  --color-bg: #0c1a2a;
-  --color-bg-alt: #1e3653;
-  --color-bg-card: #162d48;
-  --color-bg-card-hover: #1b3758;
-  --color-surface: #1e3653;
+  --color-bg: #0B1A2B;
+  --color-bg-alt: #162D48;
+  --color-bg-card: #1E3A5F;
+  --color-bg-card-hover: #244670;
+  --color-surface: #1E3A5F;
   --color-border: #2a4a6a;
   --color-border-light: #3a5a7a;
   --color-text: #e8e0e0;
   --color-text-muted: #a8b8c8;
   --color-text-subtle: #7a8ea0;
-  --color-primary: #348ddb;
-  --color-primary-light: #4da0e8;
-  --color-primary-dark: #0049a2;
-  --color-accent: #e1a730;
-  --color-accent-light: #f0bb45;
+  --color-primary: #2563EB;
+  --color-primary-light: #4a80f0;
+  --color-primary-dark: #1A3A5C;
+  --color-accent: #C4A44A;
+  --color-accent-light: #d4b85a;
   --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
   --gradient-text: linear-gradient(135deg, var(--color-primary-light), var(--color-accent));
   --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
   --shadow-md: 0 4px 20px rgba(0,0,0,0.4);
   --shadow-lg: 0 8px 40px rgba(0,0,0,0.5);
-  --shadow-glow: 0 0 30px rgba(52,141,219,0.15);
+  --shadow-glow: 0 0 30px rgba(37,99,235,0.15);
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 20px;
@@ -122,12 +122,12 @@ img {
 .btn-primary {
   background: var(--gradient-primary);
   color: #fff;
-  box-shadow: 0 4px 15px rgba(52,141,219,0.3);
+  box-shadow: 0 4px 15px rgba(37,99,235,0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 25px rgba(52,141,219,0.45);
+  box-shadow: 0 6px 25px rgba(37,99,235,0.45);
 }
 
 .btn-outline {
@@ -150,7 +150,7 @@ img {
 }
 
 .btn-nav:hover {
-  box-shadow: 0 4px 15px rgba(52,141,219,0.4);
+  box-shadow: 0 4px 15px rgba(37,99,235,0.4);
 }
 
 .btn-full {
@@ -255,7 +255,7 @@ img {
   left: -20%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(52,141,219,0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(37,99,235,0.08) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -351,7 +351,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(52,141,219,0.1);
+  background: rgba(37,99,235,0.1);
   border-radius: var(--radius-sm);
   margin-bottom: 20px;
   color: var(--color-primary-light);
@@ -532,15 +532,15 @@ img {
 .work-tech span {
   font-size: 0.78rem;
   padding: 4px 12px;
-  background: rgba(52,141,219,0.1);
+  background: rgba(37,99,235,0.1);
   color: var(--color-primary-light);
   border-radius: 20px;
   font-weight: 500;
 }
 
 .work-card-logo {
-  width: 64px;
-  height: 64px;
+  width: 100px;
+  height: 100px;
   border-radius: var(--radius-sm);
   object-fit: contain;
   margin-bottom: 16px;
@@ -685,7 +685,7 @@ img {
 .form-group input:focus,
 .form-group textarea:focus {
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(52,141,219,0.15);
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
 }
 
 .form-group textarea {
